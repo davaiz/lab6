@@ -8,24 +8,26 @@
   
 Выведите значение совпадающих элементов. 
   
- +-------------+-------+ 
- | Ввод        | Вывод | 
- +=============+=======+ 
- | 6           | 5     | 
- +-------------+-------+ 
- | 8 3 5 4 5 1 |       | 
- +-------------+-------+ 
- ''' 
++-------------+-------+ 
+| Ввод        | Вывод | 
++=============+=======+ 
+| 6           | 5     | 
++-------------+-------+ 
+| 8 3 5 4 5 1 |       | 
++-------------+-------+ 
+''' 
 inp = open("input.txt","r") 
 otp = open("output.txt","w") 
-N = int(inp.readline()) 
-A = list(map(int,inp.split())) 
-for i in A: 
-    if A.count(i) == 2: 
-        otp.write(i) 
+N = list(inp.readlines()) 
+A = list(map(int,N[1].split(" "))) 
+for i in range(int(N[0])): 
+    if A.count(A[i]) == 2: 
+        otp.write(str(A[i])) 
         otp.close() 
         inp.close() 
         break 
-    
-
-      
+    if A.count(A[int(N[0])-1-i]) == 2: 
+        otp.write(str(A[int(N[0])-1-i])) 
+        otp.close() 
+        inp.close() 
+        break 
