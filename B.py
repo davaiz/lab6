@@ -45,7 +45,7 @@
 inp = open("input.txt",r) 
 otp = open("output.txt",w) 
 N = int(input.readline())
-A = list(map(int,inp.split(" ")))
+A = list(map(int,inp.split()))
 k = 0
 L = 0
 for i in A:
