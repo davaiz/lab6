@@ -49,7 +49,7 @@ A = input.readline().split()
 k = 0
 L = 0
 for i in range(N)
-    i = int(N[i])
+    i = int(A[i])
     if i == 5:
         k += 1
     else:
