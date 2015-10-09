@@ -53,7 +53,9 @@ for i in range(n):
 	if A[i] == 5: 
  		k -= 1 
  	A[i] -= 5 
- 	k += A[i] // 5 
+ 	k += A[i] // 5
+output.write(str(k))
+output.close()
 input.close()
 
      
