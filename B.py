@@ -49,14 +49,12 @@ A = list(map(int, inp().split()))
 k = 0
 L = 0
 for i in A:
-    if A == 5:
+    if i == 5:
         k += 1
     else
-        if A/5 <= k:
-            L += A/5 - k
+        if i/5 >= k:
+            L += i/5 - k
             k = 0
         else:
-            k -= A/5
+            k -= i/5
 otr.write(L)
-     
-    
