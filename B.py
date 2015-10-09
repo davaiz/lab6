@@ -42,3 +42,21 @@
 | 50 5 5 5 |       |
 +----------+-------+
 '''
+inp = open("input.txt",r) 
+otp = open("output.txt",w) 
+N = int(inp.readline())
+A = list(map(int, inp().split()))
+k = 0
+L = 0
+for i in A:
+    if A == 5:
+        k += 1
+    else
+        if A/5 <= k:
+            L += A/5 - k
+            k = 0
+        else:
+            k -= A/5
+otr.write(L)
+     
+    
