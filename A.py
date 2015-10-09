@@ -16,15 +16,16 @@
  | 8 3 5 4 5 1 |       | 
  +-------------+-------+ 
  ''' 
-input = open('input.txt', 'r')
-output = open('output.txt', 'w')
-N = int(input())
-A = list(map(int, input().split()))
+inp = open("input.txt","r") 
+otp = open("output.txt","w") 
+N = int(inp.readline()) 
+A = list(map(int,inp.split())) 
 for i in A: 
-    if A.count(i) == 2:
-        output.write(i)
-        break
-input.close()
-output.close()
+    if A.count(i) == 2: 
+        otp.write(i) 
+        otp.close() 
+        inp.close() 
+        break 
+    
 
       
