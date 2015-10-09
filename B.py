@@ -44,8 +44,8 @@
 '''
 inp = open("input.txt",r) 
 otp = open("output.txt",w) 
-N = int(input.readline())
-A = input.readline().split()
+N = int(inp.readline())
+A = inp.readline().split()
 k = 0
 L = 0
 for i in range(N)
