@@ -45,10 +45,11 @@
 inp = open("input.txt",r) 
 otp = open("output.txt",w) 
 N = int(input.readline())
-A = list(map(int,inp.split()))
+A = input.readline().split()
 k = 0
 L = 0
-for i in A:
+for i in range(N)
+    i = int(N[i])
     if i == 5:
         k += 1
     else:
