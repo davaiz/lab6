@@ -42,19 +42,24 @@
 | 50 5 5 5 |       |
 +----------+-------+
 '''
-input = open('input.txt', 'r') 
-output = open('output.txt', 'w') 
-k = 0 
-n = input.read() 
-A = input().split() 
-for i in range(len(A)): 
-     A[i] = int(A[i]) 
-for i in range(n): 
-    if A[i] == 5:
-        k -= 1 
-    A[i] -= 5 
-    k += A[i] // 5 
-print(k) 
+inp = open("input.txt",r) 
+otp = open("output.txt",w) 
+N = int(input.readline())
+A = list(map(int,inp.split(" ")))
+k = 0
+L = 0
+for i in A:
+    if i == 5:
+        k += 1
+    else:
+        if (i-5)/5 > k:
+            L += (i-5)/5 - k
+            k = 0
+        else:
+            k -= (i-5)/5
+otp.write(str(L))
+inp.close()
+otp.close()
 
 
      
