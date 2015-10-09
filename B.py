@@ -48,7 +48,7 @@ N = int(inp.readline())
 A = inp.readline().split()
 k = 0
 L = 0
-for i in range(N)
+for i in range(N):
     i = int(A[i])
     if i == 5:
         k += 1
