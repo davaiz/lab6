@@ -52,12 +52,14 @@ for i in A:
     if i == 5:
         k += 1
     else:
-        if i/5 >= k:
-            L += i/5 - k
+        if (i-5)/5 >= k:
+            L += (i-5)/5 - k
             k = 0
         else:
-            k -= i/5
+            k -= (i-5)/5
 otr.write(str(L))
+     
+    
 
      
      
