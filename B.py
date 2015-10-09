@@ -57,6 +57,6 @@ for i in A:
             k = 0
         else:
             k -= i/5
-otr.write(L)
+otr.write(str(L))
      
     
