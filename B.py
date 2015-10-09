@@ -44,8 +44,8 @@
 '''
 inp = open("input.txt",r) 
 otp = open("output.txt",w) 
-N = int(inp.readline())
-A = list(map(int, inp().split()))
+N = list(inp.readlines())
+A = list(map(int,N[1] inp().split()))
 k = 0
 L = 0
 for i in A:
@@ -58,3 +58,5 @@ for i in A:
         else:
             k -= i/5
 otr.write(L)
+     
+    
