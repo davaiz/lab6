@@ -57,7 +57,7 @@ for i in A:
             k = 0
         else:
             k -= (i-5)/5
-otp.write(str(L)
+otp.write(str(L))
     
 
      
