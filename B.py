@@ -13,8 +13,8 @@ for i in range(n):
         k+=kup 
     else:  
         L+=k+kup
-        k=0 
-print(l,file=output) 
+        k = 0 
+print(L, file = output) 
 
      
     
