@@ -58,7 +58,8 @@ for i in A:
         else:
             k -= (i-5)/5
 otp.write(str(L))
-    
+inp.close()
+otp.close()
 
      
      
