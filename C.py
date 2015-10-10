@@ -11,7 +11,7 @@ for i in range(N):
     q = A.index(-A[i])-i
     if q < m:
       m = q
-if m == n + 1:
+if m == N + 1:
   print(0, file=out)
 else:
   print(m, file=out)
