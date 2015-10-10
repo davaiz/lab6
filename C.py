@@ -1,7 +1,7 @@
 q = 0
 inp = open('input.txt','r')
 out = open('output.txt','w')
-N = int(input.readline())
+N = int(inp.readline())
 A = inp.readline().split()
 for i in range(N):
   A[i] = int(A[i])
